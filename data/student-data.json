@@ -348,5 +348,19 @@
     "Parent Phone": "0987654320",
     "Course": "TSA",
     "Class Name": "SS.TSA.02"
+  },
+  {
+    "Student ID": "2025-000051",
+    "Student Phone": "0976543215",
+    "Parent Phone": "0987654321",
+    "Course": "SPT",
+    "Class Name": "SS.SPT.02"
+  },
+  {
+    "Student ID": "2025-000052",
+    "Student Phone": "0976543216",
+    "Parent Phone": "0987654322",
+    "Course": "HSA",
+    "Class Name": "SS.HSA.03"
   }
 ]
