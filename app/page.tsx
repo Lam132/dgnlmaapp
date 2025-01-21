@@ -82,15 +82,15 @@ export default function StudentIDSearch() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">Student ID Search</h1>
+      <h1 className="text-3xl font-bold mb-4">Tìm kiếm Số Báo Danh</h1>
       <div className="space-y-4 mb-6">
-        <Input placeholder="Student Phone" value={studentPhone} onChange={(e) => setStudentPhone(e.target.value)} />
-        <Input placeholder="Parent Phone" value={parentPhone} onChange={(e) => setParentPhone(e.target.value)} />
+        <Input placeholder="Số điện thoại học sinh" value={studentPhone} onChange={(e) => setStudentPhone(e.target.value)} />
+        <Input placeholder="Số điện thoại phụ huynh" value={parentPhone} onChange={(e) => setParentPhone(e.target.value)} />
       </div>
       <Card className="mb-6">
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
-            <span>Filter</span>
+            <span>Bộ lọc</span>
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -109,7 +109,7 @@ export default function StudentIDSearch() {
           <CardContent>
             <div className="space-y-4">
               <div>
-                <h3>Course</h3>
+                <h3>Chọn Khóa</h3>
                 <div className="grid grid-cols-4 gap-2">
                   {courses.map((course) => (
                     <Button key={course} variant={selectedCourse === course ? "default" : "outline"} onClick={() => handleCourseSelect(course)}>
@@ -119,7 +119,7 @@ export default function StudentIDSearch() {
                 </div>
               </div>
               <div>
-                <h3>Class</h3>
+                <h3>Chọn Lớp</h3>
                 <div className="grid grid-cols-4 gap-2">
                   {filteredClasses.map((className) => (
                     <Button key={className} variant={selectedClass === className ? "default" : "outline"} onClick={() => handleClassSelect(className)}>
@@ -132,15 +132,15 @@ export default function StudentIDSearch() {
           </CardContent>
         )}
       </Card>
-      <Button onClick={handleSearch}>Search</Button>
+      <Button onClick={handleSearch}>Tìm Kiếm</Button>
       {searchResult && (
         <Card className="mt-6">
           <CardContent>
             <p className="pt-6">
-              <strong>Student ID:</strong> {searchResult.studentId}
+              <strong>Số Báo Danh Học Sinh:</strong> {searchResult.studentId}
             </p>
             <p>
-              <strong>Enrolled Class:</strong> {searchResult.enrolledClass}
+              <strong>Lớp Học Đã Đăng Ký:</strong> {searchResult.enrolledClass}
             </p>
           </CardContent>
         </Card>
