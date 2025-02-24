@@ -128,7 +128,7 @@ export default function StudentIDSearch() {
         <Card className="mt-6">
           <CardContent>
             <p className="pt-6">
-              <strong>Số Báo Danh Học Sinh:</strong> {searchResult.studentId}
+              <strong>Mã Khóa Học Trên App:</strong> {searchResult.studentId}
             </p>
             <p>
               <strong>Lớp Học Đã Đăng Ký:</strong> {searchResult.enrolledClass}
