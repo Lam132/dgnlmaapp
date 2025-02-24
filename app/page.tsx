@@ -108,16 +108,7 @@ export default function StudentIDSearch() {
         {showFilter && (
           <CardContent>
             <div className="space-y-4">
-              <div>
-                <h3>Chọn Khóa</h3>
-                <div className="grid grid-cols-4 gap-2">
-                  {courses.map((course) => (
-                    <Button key={course} variant={selectedCourse === course ? "default" : "outline"} onClick={() => handleCourseSelect(course)}>
-                      {course}
-                    </Button>
-                  ))}
-                </div>
-              </div>
+
               <div>
                 <h3>Chọn Lớp</h3>
                 <div className="grid grid-cols-4 gap-2">
